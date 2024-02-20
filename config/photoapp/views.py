@@ -51,3 +51,36 @@ class PhotoCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.submitter = self.request.user
         return super().form_valid(form)
+    
+    
+class UserrIsSubmitter(UserPassesTestMixin):
+    # Custom method
+    def get_photo(self):
+        return get_object_or_404(Photo, pk=self.kwargs.get('pk'))
+    
+    def test_func(self):
+        if self.request.user.is_authenticated:
+            return self.request.user == self.get_photo().submitter
+        else:
+            raise PermissionDenied("Sorry user not authenticated")
+        
+
+class PhotoUpdateView(UserIsSubmitter, UpdateView):
+
+    template_name = 'photoapp/update.html'
+
+    model = Photo
+
+    fields = ['title', 'description', 'tags']
+
+    success_url = reverse_lazy('photo:list')
+
+class PhotoDeleteView(UserIsSubmitter, DeleteView):
+
+    template_name = 'photoapp/delete.html'
+
+    model = Photo
+
+    success_url = reverse_lazy('photo:list')  
+    
+    
