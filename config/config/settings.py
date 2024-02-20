@@ -34,8 +34,12 @@ INSTALLED_APPS = [
 ]
 
 # Django taggit
-
 TAGGIT_CASE_INSENSITIVE = True
+
+# Other settings
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
