@@ -40,6 +40,14 @@ TAGGIT_CASE_INSENSITIVE = True
 # Other settings
 MEDIA_URL = '/media/'
 
+USE_TZ = True
+
+# Django Authentication
+LOGIN_URL = 'user:login'
+LOGIN_REDIRECT_URL = 'photo:list'
+LOGOUT_REDIRECT_URL = 'photo:list'
+
+
 MEDIA_ROOT = BASE_DIR / 'media/'
 
 MIDDLEWARE = [
