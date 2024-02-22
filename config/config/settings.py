@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     
     # 3rd party apps
     'taggit',
+    'crispy_forms',
     
     # Custom apps
     'photoapp',
@@ -36,6 +37,9 @@ INSTALLED_APPS = [
 
 # Django taggit
 TAGGIT_CASE_INSENSITIVE = True
+
+# Indicates the frontend framework django crispy forms will use
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Other settings
 MEDIA_URL = '/media/'
