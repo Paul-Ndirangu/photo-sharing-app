@@ -10,6 +10,8 @@ from .views import (
     PhotoDetailView    
 )
 
+app_name = 'photo'
+
 # Empty patterns
 urlpatterns = [
     path("", PhotoListView.as_view(), name="list"),
