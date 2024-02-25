@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     # 3rd party apps
     'taggit',
     'crispy_forms',
+    'crispy_bootstrap4',
     
     # Custom apps
     'photoapp',
