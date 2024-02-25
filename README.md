@@ -3,7 +3,7 @@
 This repository contains the source code for a full-stack photo-sharing app built with Django on the backend and Bootstrap on the frontend.
 
 
-![home page](https://github.com/Paul-Ndirangu/photo-sharing-app/tree/main/config/imgs/home.png)
+![home page](config/imgs/home.png)
 
 **Features:**
 
