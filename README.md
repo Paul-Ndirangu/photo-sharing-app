@@ -25,6 +25,8 @@ This repository contains the source code for a full-stack photo-sharing app buil
 * Frontend:
     * Django templates: Dynamically display data in HTML files
     * Bootstrap 5: Framework for web design
+![admin page](config/imgs/admin.png)
+
 
 **Installation:**
 
