@@ -11,6 +11,8 @@ This repository contains the source code for a full-stack photo-sharing app buil
 * User management system with account creation, photo upload, viewing other users' photos, and editing/deleting personal photos
 * Simple web interface built with Bootstrap
 
+![add image page](config/imgs/add-image.png)
+
 **Note:** This is not a social network and does not include the complexities associated with platforms like Instagram or Twitter.
 
 **Tech Stack:**
