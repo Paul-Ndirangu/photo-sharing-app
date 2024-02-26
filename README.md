@@ -74,6 +74,8 @@ python manage.py runserver
 
 We welcome contributions to this project. Please refer to the CONTRIBUTING.md file for guidelines.
 
+> Feel free to reach out to [paulmwaura254@gmail.com](paulmwaura254@gmail.com)
+
 **License:**
 
 This project is licensed under the MIT License (see LICENSE.md).
